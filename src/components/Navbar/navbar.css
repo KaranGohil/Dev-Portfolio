@@ -1,0 +1,30 @@
+.navbar-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--header-color);
+    height: 16vh;
+    font-size: 20px;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    color: var(--header-color);
+    text-decoration: none;
+}
+
+.navbar-links li a:hover {
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-color: var(--header-color);
+    cursor: pointer;
+}

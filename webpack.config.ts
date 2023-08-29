@@ -10,7 +10,9 @@ const webpackConfig = (env): Configuration => ({
     ...(env.production || !env.development ? {} : {devtool: "eval-source-map"}),
     resolve: {
         extensions: [".ts", ".tsx", ".js"],
-        plugins: [new TsconfigPathsPlugin()]
+        plugins: [new TsconfigPathsPlugin({
+            configFile: "./tsconfig.json"
+        }) as any]
     },
     output: {
         path: path.join(__dirname, "/dist"),
@@ -25,7 +27,11 @@ const webpackConfig = (env): Configuration => ({
                     transpileOnly: true
                 },
                 exclude: /dist/
-            }
+            },
+            {
+                test: /\.(css)$/,
+                use: ['style-loader', 'css-loader'],
+              }
         ]
     },
     plugins: [

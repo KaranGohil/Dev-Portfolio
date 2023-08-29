@@ -1,0 +1,45 @@
+/*
+typewriterCharacters should be the number as the lengthc of the string for a clean animation 
+ */
+
+.typewriter-logo {
+    font-size: 20px;
+    font-weight: normal;
+    position: relative;
+    width: max-content;
+}
+
+.typewriter-logo::before,
+.typewriter-logo::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.typewriter-logo::before {
+    background: var(--background-color);
+    animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards;
+}
+
+.typewriter-logo::after {
+    width: 0.125em;
+    margin-left: 5px;
+    background: var(--header-color);
+    animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards,
+        blink 800ms steps(var(--typewriterCharacters)) infinite;
+}
+
+@keyframes typewriter {
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes blink {
+    to {
+        background: transparent;
+    }
+}
