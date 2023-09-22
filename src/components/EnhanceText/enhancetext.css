@@ -1,0 +1,164 @@
+.enhance-text-link {
+    color: var(--header-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.letter {
+    display: inline-block;
+    transition: transform 350ms ease;
+}
+
+.enhance-text-link:hover > .letter {
+    background: linear-gradient(292.9deg, rgb(254, 105, 241) 28.8%, rgb(182, 44, 248) 70.4%);;
+    background-size: 1000%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition-duration: 800ms;
+}
+
+/* EMAIL */
+
+.email:hover > .letter:nth-child(1) {
+    transform: translate(-60%, 60%) rotate(-25deg);
+}
+
+.email:hover > .letter:nth-child(2) {
+    transform: translate(-60%, 40%) rotate(-25deg);
+}
+
+.email:hover > .letter:nth-child(3) {
+    transform: translate(-25%, 15%) rotate(6deg);
+}
+
+.email:hover > .letter:nth-child(4) {
+    transform: translate(0%, -20%) rotate(-8deg);
+}
+
+.email:hover > .letter:nth-child(5) {
+    transform: translate(10%, 20%) rotate(5deg);
+}
+
+.email:hover > .letter:nth-child(6) {
+    transform: translate(0%, -20%) rotate(7deg);
+}
+
+.email:hover > .letter:nth-child(7) {
+    transform: translate(0%, 10%) rotate(8deg);
+}
+
+/* LINKEDIN */
+
+.linkedin:hover > .letter:nth-child(1) {
+    transform: translate(-60%, -40%) rotate(25deg);
+}
+
+.linkedin:hover  > .letter:nth-child(2) {
+    transform: translate(-60%, -20%) rotate(25deg);
+}
+
+.linkedin:hover  > .letter:nth-child(3) {
+    transform: translate(-10%, -10%) rotate(-8deg);
+}
+
+.linkedin:hover  > .letter:nth-child(4) {
+    transform: translate(0%, 8%) rotate(-8deg);
+}
+
+.linkedin:hover  > .letter:nth-child(5) {
+    transform: translate(0%, -20%) rotate(5deg);
+}
+
+.linkedin:hover  > .letter:nth-child(6) {
+    transform: translate(0%, 20%) rotate(-3deg);
+}
+
+.linkedin:hover  > .letter:nth-child(7) {
+    transform: translate(0%, -40%) rotate(-5deg);
+}
+
+.linkedin:hover  > .letter:nth-child(8) {
+    transform: translate(0%, 20%) rotate(10deg);
+}
+
+.linkedin:hover  > .letter:nth-child(9) {
+    transform: translate(0%, -40%) rotate(-5deg);
+}
+
+.linkedin:hover  > .letter:nth-child(10) {
+    transform: translate(20%, 20%) rotate(10deg);
+}
+
+/* GITHUB */
+
+.github:hover > .letter:nth-child(1) {
+    transform: translate(-60%, -40%) rotate(25deg);
+}
+
+.github:hover  > .letter:nth-child(2) {
+    transform: translate(-60%, -20%) rotate(25deg);
+}
+
+.github:hover  > .letter:nth-child(3) {
+    transform: translate(-10%, -20%) rotate(-6deg);
+}
+
+.github:hover  > .letter:nth-child(4) {
+    transform: translate(20%, 30%) rotate(-8deg);
+}
+
+.github:hover  > .letter:nth-child(5) {
+    transform: translate(0%, -20%) rotate(5deg);
+}
+
+.github:hover  > .letter:nth-child(6) {
+    transform: translate(0%, 20%) rotate(8deg);
+}
+
+.github:hover  > .letter:nth-child(7) {
+    transform: translate(0%, -40%) rotate(-5deg);
+}
+
+.github:hover  > .letter:nth-child(8) {
+    transform: translate(20%, 20%) rotate(8deg);
+}
+
+/* RESUME */
+
+.resume:hover > .letter:nth-child(1) {
+    transform: translate(-60%, 60%) rotate(-25deg);
+}
+
+.resume:hover  > .letter:nth-child(2) {
+    transform: translate(-60%, 40%) rotate(-25deg);
+}
+
+.resume:hover  > .letter:nth-child(3) {
+    transform: translate(-10%, 40%) rotate(-6deg);
+}
+
+.resume:hover  > .letter:nth-child(4) {
+    transform: translate(-10%, -8%) rotate(-8deg);
+}
+
+.resume:hover  > .letter:nth-child(5) {
+    transform: translate(0%, 20%) rotate(10deg);
+}
+
+.resume:hover  > .letter:nth-child(6) {
+    transform: translate(0%, -20%) rotate(-20deg);
+}
+
+.resume:hover  > .letter:nth-child(7) {
+    transform: translate(0%, 40%) rotate(20deg);
+}
+
+.resume:hover  > .letter:nth-child(8) {
+    transform: translate(30%, -5%) rotate(15deg);
+}
+
+
+
+
+

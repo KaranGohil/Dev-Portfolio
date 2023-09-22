@@ -31,13 +31,17 @@
 	transform: rotate(-45deg) translate(10px, -5px);
 }
 
+.hamburger-links.is-open {
+	max-height: 300px;
+}
+
 .hamburger-links {
 	position: absolute;
 	top: 100%;
 	right: 0;
 	list-style: none;
 	width: fit-content;
-	max-height: 300px;
+	max-height: 0;
 	overflow: hidden;
 	transition: all 0.3s ease-in-out;
 }
@@ -48,5 +52,13 @@
 	text-align: center;
 	font-size: 1.5rem;
 	text-decoration: none;
-	transition: all 0.3 ease-in-out;
+	transition: all 0.3s ease-in-out;
+	color: var(--header-color);
+}
+
+.hamburger-links li a:hover {
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-color: var(--header-color);
+    cursor: pointer;
 }

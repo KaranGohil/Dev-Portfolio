@@ -1,0 +1,53 @@
+.experience-card-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 48px;
+	text-align: left;
+    padding-right: 20vw;
+}
+
+.experience-card-container.is-mobile {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: start;
+	padding: 0 15vw;
+}
+
+.date {
+    font-weight: 500;
+    color: var(--description-color);
+    text-align: right;
+}
+
+.experience-card-container.is-mobile > .date {
+	text-align: left;
+}
+
+.experience-card-content {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.experience-card-content .title {
+	text-align: left;
+}
+
+.experience-card-content .title:hover {
+    color: rgb(62, 62, 221);
+	cursor: pointer;
+}
+
+
+.experience-card-skills {
+	display: flex;
+	gap: 8px;
+    flex-wrap: wrap;
+}
+
+.open-link-icon {
+	position: absolute;
+	margin-top: 3px;
+	margin-left: 6px;
+}

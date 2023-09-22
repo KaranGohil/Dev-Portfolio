@@ -1,0 +1,32 @@
+.starting-section-container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    color: var(--header-color);
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+}
+
+.line {
+    display: flex;
+    justify-content: space-between;
+}
+
+.word {
+    transition: opacity 250ms ease;
+    font-weight: 500;
+    cursor: default;
+    font-size: clamp(1rem, 7vw, 6rem);
+}
+
+.invisible {
+    opacity: 0;
+    font-size: clamp(1rem, 7vw, 6rem);
+}
+
+.starting-section-container:has(.enhance-text-link:hover) 
+.word:not(.enhance-text-link:hover)
+{
+  opacity: 0.2;
+}

@@ -1,0 +1,48 @@
+h3 {
+    font-size: 16px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+img {
+	width: 20vw;
+	aspect-ratio: 1;
+}
+
+img.is-mobile {
+    width: 35vw;
+    aspect-ratio: 1;
+}
+
+.herosection {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    color: var(--header-color);
+}
+
+.herosection-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.herosection-container.is-mobile {
+    flex-direction: column;
+}
+
+.herosection-text {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.herosection-buttons {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}

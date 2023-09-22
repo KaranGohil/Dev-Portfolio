@@ -1,0 +1,7 @@
+.skill-blob {
+    font-weight: 500;
+	padding: 0.3rem 0.8rem;
+	border-radius: 9999px;
+	background-color: rgba(134, 97, 160, 0.2);
+	color: rgb(200, 158, 230);
+}

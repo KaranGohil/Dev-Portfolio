@@ -3,8 +3,7 @@ typewriterCharacters should be the number as the lengthc of the string for a cle
  */
 
 .typewriter-logo {
-    font-size: 20px;
-    font-weight: normal;
+    font-size: 32px;
     position: relative;
     width: max-content;
 }

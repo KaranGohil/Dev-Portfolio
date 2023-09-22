@@ -1,0 +1,27 @@
+.card-content {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.card-content .title {
+	text-align: left;
+}
+
+.card-content .title:hover {
+    color: rgb(62, 62, 221);
+	cursor: pointer;
+}
+
+
+.card-content-skills {
+	display: flex;
+	gap: 8px;
+    flex-wrap: wrap;
+}
+
+.open-link-icon {
+	position: absolute;
+	margin-top: 3px;
+	margin-left: 6px;
+}

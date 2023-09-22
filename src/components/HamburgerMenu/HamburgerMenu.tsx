@@ -15,22 +15,20 @@ export const HamburgerMenu = () => {
 				<span></span>
 				<span></span>
 			</div>
-			{isOpen && (
-				<ul className="hamburger-links">
-					<li>
-						<a href="">About</a>
-					</li>
-					<li>
-						<a href="">Experience</a>
-					</li>
-					<li>
-						<a href="">Projects</a>
-					</li>
-					<li>
-						<a href="">Contact</a>
-					</li>
-				</ul>
-			)}
+			<ul className={classNames('hamburger-links', { 'is-open': isOpen })}>
+				<li>
+					<a href="">About</a>
+				</li>
+				<li>
+					<a href="">Experience</a>
+				</li>
+				<li>
+					<a href="">Projects</a>
+				</li>
+				<li>
+					<a href="">Contact</a>
+				</li>
+			</ul>
 		</div>
 	);
 };
